@@ -1,4 +1,4 @@
-package com.larrykim.chap01;
+package com.larrykim.chap01.step01;
 
 public class TicketSeller {
     private TicketOffice ticketOffice;
