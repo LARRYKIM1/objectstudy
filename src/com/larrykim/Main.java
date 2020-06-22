@@ -18,7 +18,6 @@ public class Main {
         TicketSeller ticketSeller = new TicketSeller(ticketOffice);
 
         Theater theater = new Theater(ticketSeller);
-
         Audience audience = generateAudience();
 
         System.out.println("enter 메서드 실행...");
