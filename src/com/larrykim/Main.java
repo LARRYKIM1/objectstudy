@@ -1,28 +1,34 @@
 package com.larrykim;
 
-import com.larrykim.chap01.step01.*;
-import sun.util.resources.cldr.kea.TimeZoneNames_kea;
+import com.larrykim.chap01.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args){
 
-        //티켓 10개 생성
-        List<Ticket> ticketList = generateTicket();
-        //티켓 오피스 100만원 + 10개 티켓 넣어준다.
-        TicketOffice ticketOffice = new TicketOffice(1000000l, ticketList);
-        TicketSeller ticketSeller = new TicketSeller(ticketOffice);
+        // 영화관 생성
+        Theater theater = generateTheater();
 
-        Theater theater = new Theater(ticketSeller);
+        // 관람객 생성
         Audience audience = generateAudience();
 
         System.out.println("enter 메서드 실행...");
         theater.enter(audience);
 
+    }
+
+    public static Theater generateTheater(){
+
+        //티켓오피스 100만원 + 10개 티켓 넣어준다.
+        //티켓판매자를 티켓오피스에 배정
+        List<Ticket> ticketList = generateTicket();
+        TicketOffice ticketOffice = new TicketOffice(1000000l, ticketList);
+        TicketSeller ticketSeller = new TicketSeller(ticketOffice);
+        
+        return new Theater(ticketSeller);
     }
 
     public static List<Ticket> generateTicket(){

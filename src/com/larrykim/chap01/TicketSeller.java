@@ -1,4 +1,6 @@
-package com.larrykim.chap01.step01;
+package com.larrykim.chap01;
+
+import com.larrykim.chap01.Audience;
 
 public class TicketSeller {
     private TicketOffice ticketOffice;
@@ -10,4 +12,5 @@ public class TicketSeller {
     public TicketOffice getTicketOffice() {
         return ticketOffice;
     }
+
 }

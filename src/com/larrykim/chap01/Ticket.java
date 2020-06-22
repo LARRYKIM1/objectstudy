@@ -1,4 +1,4 @@
-package com.larrykim.chap01.step01;
+package com.larrykim.chap01;
 
 public class Ticket {
     private Long fee;

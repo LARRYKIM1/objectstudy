@@ -1,4 +1,4 @@
-package com.larrykim.chap01.step01;
+package com.larrykim.chap01;
 
 public class Audience {
     private Bag bag;
@@ -10,4 +10,5 @@ public class Audience {
     public void setBag(Bag bag){
         this.bag = bag;
     }
+
 }

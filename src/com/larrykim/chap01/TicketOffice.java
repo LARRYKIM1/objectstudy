@@ -1,7 +1,6 @@
-package com.larrykim.chap01.step01;
+package com.larrykim.chap01;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class TicketOffice {
