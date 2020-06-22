@@ -1,19 +1,19 @@
-package com.larrykim.chap01.step01;
+package com.larrykim.chap01.step02;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TicketOffice {
+public class TicketOffice2 {
     private Long amount;
-    private List<Ticket> tickets=new ArrayList<>();
+    private List<Ticket2> tickets=new ArrayList<>();
 
-    public TicketOffice(Long amount, List<Ticket> tickets){
+    public TicketOffice2(Long amount, Ticket2... tickets){
         this.amount=amount;
-        this.tickets.addAll(tickets);
+        this.tickets.addAll(Arrays.asList(tickets));
     }
 
-    public Ticket getTicket(){
+    public Ticket2 getTicket(){
         return tickets.remove(0);
     }
 

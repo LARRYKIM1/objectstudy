@@ -6,4 +6,8 @@ public class Audience {
     public Bag getBag(){
         return bag;
     }
+
+    public void setBag(Bag bag){
+        this.bag = bag;
+    }
 }
