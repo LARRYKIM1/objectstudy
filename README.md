@@ -2,15 +2,15 @@
 오브젝트 책을 읽고 정리하는 공간입니다.
 
 # STEP01
-![1](https://gblobscdn.gitbook.com/assets%2F-M7KQQ2ZLP5HVNbeQNZi%2F-MAiVNG8c2_-Qh-E4pkg%2F-MAiVR88U9l8yIl8vEAC%2Fimage.png?alt=media&token=dc5887e4-da79-4b1a-ae8b-abb0c5e3c77d)
+![1](https://user-images.githubusercontent.com/49010295/85815710-1bf85300-b7a4-11ea-99ca-0ca95a9ab655.png)
 
 # STEP02
-![2](https://gblobscdn.gitbook.com/assets%2F-M7KQQ2ZLP5HVNbeQNZi%2F-MAiVNG8c2_-Qh-E4pkg%2F-MAiVvop3D2Zjeb4RemS%2Fimage.png?alt=media&token=31f0a7a8-c67d-4757-b7ba-1df6cbe89366)
+![2](https://user-images.githubusercontent.com/49010295/85815735-2e728c80-b7a4-11ea-915f-6acd3e040cc4.png)
 
 # STEP03
-![3](https://gblobscdn.gitbook.com/assets%2F-M7KQQ2ZLP5HVNbeQNZi%2F-MAiVNG8c2_-Qh-E4pkg%2F-MAiWGRzHDl1piYv7u42%2Fimage.png?alt=media&token=d93c8ca3-690d-46e2-91b4-64322bd7606f)
+![3](https://user-images.githubusercontent.com/49010295/85815739-30d4e680-b7a4-11ea-8631-d536ca5e1889.png)
 
 # STEP04
-![4](https://gblobscdn.gitbook.com/assets%2F-M7KQQ2ZLP5HVNbeQNZi%2F-MAiVNG8c2_-Qh-E4pkg%2F-MAiWmX-N_Z2EXEFAE97%2Fimage.png?alt=media&token=7d6d1782-5044-418f-8e11-387b26c7bcbf)
+![4](https://user-images.githubusercontent.com/49010295/85815744-33cfd700-b7a4-11ea-84ea-459261ed2704.png)
 
 
