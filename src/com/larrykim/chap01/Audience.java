@@ -11,8 +11,12 @@ public class Audience {
         this.bag = bag;
     }
 
+    //고객 가방에
+
     public Long buy(Ticket ticket) {
-        if (bag.hasInvitation()) { //본인이 직접 가방 확인.
+        return bag.hold(ticket);
+
+       /* if (bag.hasInvitation()) { //본인이 직접 가방 확인.
             System.out.println("1 손님: 초대장이 있어요^^!");
             bag.setTicket(ticket);
             return 0L; //초대장이 있으니 돈줄 필요 x
@@ -22,6 +26,6 @@ public class Audience {
             bag.setTicket(ticket);
             bag.minusAmount(ticket.getFee());
             return ticket.getFee();
-        }
+        }*/
     }
 }
