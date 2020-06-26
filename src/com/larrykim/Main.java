@@ -9,15 +9,18 @@ import java.util.List;
 public class Main {
     public static void main(String[] args){
 
-        // 영화관 생성
+        // 영화관 + 티켓오피스 + 티켓판매자 생성
         Theater theater = generateTheater();
 
         // 관람객 생성
-        Audience audience = generateAudience();
+        List<Audience> audienceList = generateAudience();
 
-        System.out.println("enter 메서드 실행...");
-        theater.enter(audience);
-
+        System.out.println("============================");
+        System.out.println("고객 두분이 오셨습니다.");
+        for(Audience audience : audienceList)
+            theater.enter(audience);
+        System.out.println("============================");
+        System.out.println("고객이 상영관에 들어갑니다.");
     }
 
     public static Theater generateTheater(){
@@ -27,7 +30,8 @@ public class Main {
         List<Ticket> ticketList = generateTicket();
         TicketOffice ticketOffice = new TicketOffice(1000000l, ticketList);
         TicketSeller ticketSeller = new TicketSeller(ticketOffice);
-        
+
+        System.out.println("영화관 + 티켓오피스 + 티켓판매자 생성 완료...");
         return new Theater(ticketSeller);
     }
 
@@ -35,25 +39,35 @@ public class Main {
         List<Ticket> ticketList = new ArrayList<>();
         for(int i=1;i<10;i++){
             Ticket ticket = new Ticket();
-            ticket.setFee(1000l);
+            ticket.setTitle("왕의남자");
+            ticket.setFee(10000l);
             ticketList.add(ticket);
         }
         System.out.println("티켓 생성 완료...");
         return ticketList;
     }
 
-    public static Audience generateAudience(){
-        LocalDateTime localDateTime = LocalDateTime.now();
+    public static List<Audience> generateAudience(){
+
+        //초대장은 어느영화인지 상관없고 날짜만 해당하면 입장가능
+        LocalDateTime localDateTime = LocalDateTime.of(20,12,25,20,00);
         Invitation invitation = new Invitation(localDateTime);
 
-        //초대장과 5만원 가방에 넣어준다.
-        Bag bag = new Bag(invitation,50000l);
+        List<Audience> audienceList = new ArrayList<>();
 
-        Audience audience = new Audience();
+        //초대장 있는 회원
+        Bag bag1 = new Bag(invitation,50000l);
+        Audience audience1 = new Audience();
+        audience1.setBag(bag1);
+        audienceList.add(audience1);
 
-        audience.setBag(bag);
+        //초대장 없는 회원
+        Bag bag2 = new Bag(50000l);
+        Audience audience2 = new Audience();
+        audience2.setBag(bag2);
+        audienceList.add(audience2);
 
-        System.out.println("관람객 생성 완료...");
-        return audience;
+        System.out.println("관람객 2명 생성 완료...");
+        return audienceList;
     }
 }
