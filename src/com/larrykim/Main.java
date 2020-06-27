@@ -1,6 +1,5 @@
 package com.larrykim;
 
-import com.larrykim.chap01.*;
 import com.larrykim.chap02.Money.Money;
 import com.larrykim.chap02.movice.*;
 import com.larrykim.chap02.movice.pricing.*;
@@ -16,10 +15,10 @@ public class Main {
             Duration.ofMinutes(120),
             Money.wons(10000),
             new AmountDiscountPolicy(
-                    Money.wons(800),
-                    new SequenceCondition(1),
+                    Money.wons(800), // 할인 금액
+                    new SequenceCondition(1), //첫번째로 상영 영화 할인
                     new SequenceCondition(2),
-                    new PeriodCondition(
+                    new PeriodCondition( // 월요일 오전 9~11시 할인
                             DayOfWeek.MONDAY,
                             LocalTime.of(9,00),
                             LocalTime.of(11,00)
