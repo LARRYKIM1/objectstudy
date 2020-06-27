@@ -5,7 +5,7 @@ import com.larrykim.chap02.movice.DiscountCondition;
 import com.larrykim.chap02.movice.DiscountPolicy;
 import com.larrykim.chap02.movice.Screening;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {

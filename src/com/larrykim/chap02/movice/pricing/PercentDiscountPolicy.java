@@ -5,7 +5,7 @@ import com.larrykim.chap02.movice.DiscountCondition;
 import com.larrykim.chap02.movice.DiscountPolicy;
 import com.larrykim.chap02.movice.Screening;
 
-public class PercentDiscountPolicy extends DiscountPolicy {
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
     private double percent;
 
     public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {
