@@ -1,7 +1,6 @@
 package com.larrykim.chap04.movie.step02;
 
-import org.eternity.money.Money;
-
+import com.larrykim.chap04.money.Money;
 import java.time.LocalDateTime;
 
 public class Screening {

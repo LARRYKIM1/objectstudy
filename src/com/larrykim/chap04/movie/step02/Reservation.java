@@ -1,6 +1,6 @@
 package com.larrykim.chap04.movie.step02;
 
-import org.eternity.money.Money;
+import com.larrykim.chap04.money.Money;
 
 public class Reservation {
     private Customer customer;
