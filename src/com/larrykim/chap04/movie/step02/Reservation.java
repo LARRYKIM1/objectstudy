@@ -2,7 +2,7 @@ package com.larrykim.chap04.movie.step02;
 
 import com.larrykim.chap04.money.Money;
 
-public class Reservation {
+public class Reservation { // 예약 프린트용 
     private Customer customer;
     private Screening screening;
     private Money fee;

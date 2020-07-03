@@ -1,0 +1,30 @@
+<실습>
+1. 영화를 할인조건에 따라 2개 만든다. Movie ( 이름, 러닝타임, 요금, 할인조건리스트(퍼센트,특정금액) )
+MovieType에 따라 다르게 생성하기 위해 생성자 3개가 있다.
+멤버 변수로 총 7개가 있다.
+    private String title;
+    private Duration duration;
+    private Money fee;
+    private List<DiscountCondition> discountCondition;
+
+    private MovieType movieType;
+    private int discountAmount;
+    private double discountPercent;
+
+2. 할인 조건을 2종류 만든다. DiscountCondition. DiscountConditionType 확인.
+타입에는 2종류(시퀀스, 시간대)가 있고, 조건에는 타입, 순번, 요일, 시작시간, 종료시간이 멤버 변수로 있다.
+
+3. 상영정보를 만든다. Screening ( 영화, 순번, 상영시간  )
+4. 판매업체와 판매업체가 만들어줄 예약을 만든다. ReservationAgency, Reservation
+예약에는 관람객, 상영영화=볼영화, 할인 적용된 가격, 관라객수를 프린트한다.
+
+5. 고객을 만든다. Customer
+6.  볼영화, 고객, 관람객수를 넣어 ReservationAgency의 reserve()메서드를 호출한다. 예약이 된다.
+
+
+6. 고객, 볼영화, 지불금액, 관람객수를 넣어 예약을 만든다. Reservation
+7. 볼영화, 고객, 관람객수를 넣어 ReservationAgency의 reserve()메서드를 호출한다. 예약이 된다.
+
+8. Screening에서 getMovieType으로 어떤 할인조건이 있는지 확인후 영화에게 가격계산하라는 메시지 전송
+9. Movie 영화에 들어갈 메서드 calculateAmountDiscountedFee/calculatePercentDiscountedFee/calculateNoneDiscountedFee/isDiscountable 4개 추가.
+10. isDiscountable 만들기
